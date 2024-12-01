@@ -1,0 +1,103 @@
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+      }
+      
+      /* Header (Rectangle 1) */
+      .header {
+        position: absolute;
+        width: 1280px;
+        height: 59px;
+        left: 0;
+        top: 0;
+        background: #FA0808;
+      }
+      
+      .title {
+        position: absolute;
+        width: 360px;
+        height: 20px;
+        left: 460px;
+        top: 19px;
+        font-family: 'JejuMyeongjo', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        color: #FFF707;
+      }
+      
+      /* Input Fields */
+      .input-container {
+        position: absolute;
+        width: 100%;
+        top: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      
+      .input-field {
+        width: 195px;
+        height: 40px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      
+      /* Reset Password */
+      .reset-password {
+        position: absolute;
+        width: 122px;
+        height: 16px;
+        left: 620px;
+        top: 210px;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: #000000;
+        cursor: pointer;
+        
+      }
+      
+      /* Buttons */
+      .button-container {
+        position: absolute;
+        top: 200px;
+        left: calc(50% - 92px - 10px); /* Centering buttons */
+        display: flex;
+        gap: 20px;
+      }
+      
+      .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 84px;
+        height: 40px;
+        background: #65558F;
+        color: #ffffff;
+        font-size: 14px;
+        border: none;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: -180px;
+        
+      }
+      
+      .button:hover {
+        background: #4e4170;
+      }
+      

@@ -1,0 +1,83 @@
+/* Header */
+.header {
+    position: absolute;
+    width: 1280px;
+    height: 59px;
+    left: 0px;
+    top: 0px;
+    background: #FA0808;
+  }
+  
+  .title {
+    position: absolute;
+    width: 360px;
+    height: 20px;
+    left: 460px;
+    top: 19px;
+    font-family: 'JejuMyeongjo', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFF707;
+  }
+  
+  /* Input Fields */
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    width: 195px;
+    top: 100px;
+    left: calc(50% - 195px / 2);
+  }
+  
+  .input-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 195px;
+    height: 40px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Buttons */
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    width: 180px;
+    top: 360px;
+    left: calc(50% - 180px / 2);
+  }
+  
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 92px;
+    height: 40px;
+    background: #65558F;
+    color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  
+  .button:hover {
+    background: #4b4272;
+  }
+  
