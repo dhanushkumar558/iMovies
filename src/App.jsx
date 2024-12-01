@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import './App.css';
+import Reset from './PasswordReset.jsx';
+import Signup from './signup.jsx';
 
-import Signup from './signup.jsx'; // Import Signup component
 
 export default function App() {
   const [isSignup, setIsSignup] = useState(false); // State to toggle between login and signup
+  const [isReset, setIsReset] = useState(false); // State to toggle between login and password reset
 
   return (
     <>
@@ -12,8 +14,10 @@ export default function App() {
         <p className="title">iMovies - Your Destination to find Movies</p>
       </div>
 
-      {isSignup ? (
-        <Signup setIsSignup={setIsSignup} /> // Pass setIsSignup to toggle between signup and login
+      {isReset ? (
+        <Reset setIsReset={setIsReset} /> // Render Password Reset component when isReset is true
+      ) : isSignup ? (
+        <Signup setIsSignup={setIsSignup} /> // Render Signup component when isSignup is true
       ) : (
         <div>
           {/* Login Form */}
@@ -23,7 +27,7 @@ export default function App() {
           </div>
 
           {/* Reset Password */}
-          <p className="reset-password">Reset Password</p>
+          <p className="reset-password" onClick={() => setIsReset(true)}>Reset Password</p> {/* Click to toggle to Reset Password */}
 
           {/* Buttons for Login and Sign Up */}
           <div className="button-container">
