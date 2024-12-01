@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css'; 
+import './PasswordReset.css';
+
  // Assuming the CSS is in App.css
 
 function Reset({ setIsReset }) {
@@ -18,8 +20,8 @@ function Reset({ setIsReset }) {
 
       {/* Button */}
       <div className="button-container">
-        <button className="button">Submit</button>
-        <button className="button" onClick={() => setIsReset(false)}>Back to login</button> {/* Go back to login */}
+        <button className="button" style={{ marginTop: '-350px' }}>Submit</button>
+        <button className="button" style={{ marginTop: '-350px' }} onClick={() => setIsReset(false)}>Back to login</button> {/* Go back to login */}
       </div>
     </div>
   );
