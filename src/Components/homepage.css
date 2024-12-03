@@ -1,0 +1,144 @@
+.container {
+    position: relative;
+    width: 1280px;
+    height: 720px;
+  }
+  
+  /* Header */
+  .header {
+    position: absolute;
+    width: 1280px;
+    height: 59px;
+    left: 0;
+    top: 0;
+    background: #fa0808;
+    position: fixed;
+   z-index:100;
+  }
+  
+  .header-title {
+    position: absolute;
+    width: 360px;
+    height: 20px;
+    left: 460px;
+    top: 19px;
+    font-family: 'JejuMyeongjo', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff707;
+  }
+  
+  .avatar {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 1200px;
+    top: 13px;
+    background: #eaddff;
+    border-radius: 100px;
+  }
+ /* Sidebar */
+.sidebar {
+    position: fixed;
+    width: 180px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #8def1c;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index:1000;
+  }
+  
+  /* Filter Title */
+  .filter-title {
+    font-family: 'JejuMyeongjo', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  /* Filter Category */
+  .filter-category {
+    font-family: 'JejuMyeongjo', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+  
+  /* Dropdown Container */
+  .dropdown-container {
+    margin-bottom: 15px;
+  }
+  
+  /* Dropdown */
+  .dropdown {
+    display: block;
+    width: 100%; /* Full width of sidebar padding */
+    padding: 8px; /* Internal spacing */
+    background: #ffffff;
+    border: 1px solid #000;
+    border-radius: 4px; /* Rounded corners */
+    font-family: 'JejuMyeongjo', serif;
+    font-size: 14px;
+    color: #000;
+    appearance: none; /* Removes native browser styles */
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='%23000000' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+  }
+  
+  /* Dropdown Label */
+  .dropdown-label {
+    display: block;
+    font-family: 'JejuMyeongjo', serif;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 8px;
+  }
+  
+  /* Main Content Grid */
+.content-grid {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 20px; /* Spacing between cards */
+    top: 80px; /* Adjust for positioning */
+    left: 206px; /* Align to sidebar */
+    width: calc(100% - 226px); /* Account for sidebar width and padding */
+    padding: 20px; /* Optional padding around the grid */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  /* Content Card */
+.content-card {
+    display: flex; /* Use flex layout for card content */
+    flex-direction: column; /* Stack the sections vertically */
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 16px;
+    width: 100%;
+    height: 326px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover Effect for Content Card */
+  .content-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+  }
+  
+  

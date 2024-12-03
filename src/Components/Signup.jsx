@@ -1,11 +1,11 @@
-import './signup.css';
-export default function Signup({ setIsSignup }) {
-  return (
-    <>
-      <div className="header">
-        <p className="title">iMovies - Your Destination to find Movies</p>
-      </div>
+import { useNavigate } from 'react-router-dom';
+import './Signup.css';
 
+export default function Signup() {
+  const navigate = useNavigate();
+
+  return (
+    <div>
       {/* Input Fields for Signup */}
       <div className="input-container">
         <input type="text" className="input-field" placeholder="Enter Username" />
@@ -18,9 +18,10 @@ export default function Signup({ setIsSignup }) {
       {/* Buttons for Signup */}
       <div className="button-container">
         <button className="buttons">Signup</button>
-        {/* Button to navigate back to Login */}
-        <button className="buttons" onClick={() => setIsSignup(false)}>Login</button>  {/* Navigate to Login */}
+        <button className="buttons" onClick={() => navigate('/')}>
+          Login
+        </button>
       </div>
-    </>
+    </div>
   );
 }
