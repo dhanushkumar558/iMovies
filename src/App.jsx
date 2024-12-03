@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './Components/Login';
-import Signup from './Components/Signup'
+import Signup from './Components/Signup';
 import PasswordReset from './Components/PasswordReset';
 
 
