@@ -4,6 +4,11 @@ import './Login.css';
 export default function Login() {
   const navigate = useNavigate();
 
+  const handleLogin = () => {
+    // Add your authentication logic here, if any
+    navigate('/homepage'); // Navigate to homepage on login
+  };
+
   return (
     <div>
       {/* Login Form */}
@@ -19,7 +24,7 @@ export default function Login() {
 
       {/* Buttons for Login and Sign Up */}
       <div className="button-container">
-        <button className="button">Login</button>
+        <button className="button" onClick={handleLogin}>Login</button>
         <button className="button" onClick={() => navigate('/signup')}>
           Sign Up
         </button>
