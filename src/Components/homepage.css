@@ -16,6 +16,7 @@
    z-index:100;
   }
   
+  
   .header-title {
     position: absolute;
     width: 360px;
@@ -61,6 +62,7 @@
     line-height: 24px;
     color: #000000;
     margin-bottom: 20px;
+    display: flex;
   }
   
   /* Filter Category */
@@ -119,7 +121,7 @@
     width: calc(100% - 226px); /* Account for sidebar width and padding */
     padding: 20px; /* Optional padding around the grid */
     box-sizing: border-box; /* Include padding in width calculation */
-    background-image: url('https://picsum.photos/570/300');
+    
     
   }
   
@@ -144,5 +146,87 @@
     transform: translateY(-5px); /* Slight lift on hover */
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
   }
+  .no-results {
+    grid-column: 1 / -1; /* Span all columns */
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+    margin-top: 20px;
+    
+  }
+
+  /* Specific button styles */
+/* Specific button styles */
+.clear-filters {
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+}
+
+.clear-filters.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.clear-filters:hover:not(.disabled) {
+  background-color: #c0392b;
+}
+
+.exe
+{
+  margin-top: 10px;
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   
   
